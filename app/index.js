@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HelloMessage from './app';
-// here we bootstrap our applica
-ReactDOM.render(React.createElement(HelloMessage, { name: 'World' }), document.getElementById('root'));
+import App from './app.jsx';
+
+ReactDOM.render(React.createElement(App, { name: "World" }),
+ document.getElementById('root')
+ );
