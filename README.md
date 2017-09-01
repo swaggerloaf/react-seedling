@@ -1,5 +1,5 @@
 # react-seedling
-Starter react 16 project using babel, webpack, bootstrap and VS Code
+Starter react 16 project using babel and webpack
 
 # To get started 
 

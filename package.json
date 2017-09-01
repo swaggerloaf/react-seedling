@@ -33,9 +33,9 @@
     "eslint": "^4.5.0"
   },
   "keywords": [
-    "React",
+    "react",
     "babel",
-    "bootstrap",
+    "redux",
     "webpack"
   ]
 }
