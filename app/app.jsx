@@ -1,9 +1,9 @@
-import React from 'react';
-import { Component } from 'react';
+import React, { Component } from 'react'
+import FaAutomobile from 'react-icons/lib/fa/automobile'
 
 class App extends React.Component {
   render() {
-    return <div>Hello {this.props.name}</div>;
+    return <h3> Lets go for a <FaAutomobile /> </h3>
   }
 }
 
