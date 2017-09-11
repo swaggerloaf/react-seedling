@@ -22,24 +22,8 @@ module.exports = {
     },
     module: {
       rules: [
-          {
-            "exclude": "/node_modules/",
-            "include": __dirname + "/app/",
-            "loader": "babel-loader",
-            "options": {
-              "presets": ["env", "react"]
-            },
-            "test": /\.jsx?$/
-          },
-          {
-            "exclude": "/node_modules/",
-            "include": __dirname + "/app/",
-            "loader": "babel-loader",
-            "options": {
-              "presets": ["env"]
-            },
-            "test": /\.js?$/
-          }
+        { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
+        { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
       ]
     },
     context: __dirname,
