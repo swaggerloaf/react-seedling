@@ -12,9 +12,8 @@
   "repository": "https://github.com/swaggerloaf/react-seedling",
   "dependencies": {
     "react-icons": "2.2.5",
-    "react": "^16.0.0-beta.5",
-    "proptypes": "1.1.0",
-    "react-dom": "^16.0.0-beta.5",
+    "react": "^16.0.0-rc.2",
+    "react-dom": "^16.0.0-rc.2",
     "redux": "3.7.2",
     "react-redux": "5.0.6"
   },
@@ -30,7 +29,7 @@
     "del": "^3.0.0",
     "webpack": "3.5.6",
     "html-webpack-plugin": "^2.30.1",
-    "webpack-dev-server": "^2.7.1",
+    "webpack-dev-server": "^2.8.2",
     "webpack-stream": "^4.0.0",
     "eslint": "^4.6.1"
   },
