@@ -24,6 +24,8 @@
     "babel-preset-react": "6.24.1",
     "babel-loader": "7.1.2",
     "html-loader": "^0.5.1",
+    "style-loader": "0.18.2",
+    "css-loader": "0.28.7",
     "browser-sync": "^2.18.13",
     "browser-sync-webpack-plugin": "1.2.0",
     "del": "^3.0.0",
