@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server",
     "build": "node_modules/.bin/webpack --progress",
-    "test": " [ -f dist/bundle.js ] "
+    "test": "jest"
   },
   "license": "MIT",
   "repository": "https://github.com/swaggerloaf/react-seedling",
@@ -15,11 +15,13 @@
     "@types/react-dom":"15.5.4",
     "@types/react-redux":"5.0.8",
     "@types/react-icons":"2.2.2",
+    "@types/lodash":"4.14.74",
     "react": "^16.0.0-rc.2",
     "react-dom": "^16.0.0-rc.2",
     "redux": "3.7.2",
     "react-redux": "5.0.6",
-    "react-icons": "2.2.5"
+    "react-icons": "2.2.5",
+    "lodash":"4.17.4"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -36,7 +38,10 @@
     "html-webpack-plugin": "^2.30.1",
     "webpack-dev-server": "^2.8.2",
     "webpack-stream": "^4.0.0",
-    "eslint": "^4.7.0"
+    "eslint": "^4.7.0",
+    "jest":"21.1.0",
+    "babel-jest":"21.0.2",
+    "react-test-renderer":"15.6.1"
   },
   "keywords": [
     "react",
