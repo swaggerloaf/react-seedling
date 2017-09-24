@@ -1,5 +1,5 @@
 var path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+//const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
@@ -25,10 +25,14 @@ module.exports = {
         { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
         { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ },
         {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader'],
-          exclude: /node_modules/
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader']
+        },
+        {
+        test   : /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+        loader : 'file-loader'
         }
+
       ]
     },
     context: __dirname,

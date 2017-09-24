@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-import FaAutomobile from 'react-icons/lib/fa/automobile'
-
-export default class App extends Component {
+export class App extends Component {
   render() {
     return (
-      <h3> Lets go for a {this.props.name} <FaAutomobile /> </h3>
+      <div className="container-fluid">
+       <h3>Header Here</h3>
+        {this.props.children}
+      </div>
     )
   }
 }
+
+export default App;
