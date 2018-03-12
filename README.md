@@ -10,6 +10,7 @@ yarn install
 yarn start
 
 ///////// router starter //////
+<code>
 import React from 'react'
 import {
   BrowserRouter as Router,
@@ -81,5 +82,5 @@ const BasicExample = () => (
   </Router>
 )
 export default BasicExample;
- 
+</code>
 ///////// router starter //////
