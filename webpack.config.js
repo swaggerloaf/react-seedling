@@ -13,6 +13,7 @@ const publicUrl = '';
 
 
 module.exports = {
+   mode: "development",
     // starting point
     entry: "./app/index.js",
     output: {
