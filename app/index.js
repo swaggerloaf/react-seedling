@@ -1,12 +1,11 @@
-import '../node_modules/bootstrap/dist/css/bootstrap.css';
-import '../node_modules/font-awesome/css/font-awesome.css';
-
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import ReactDom from 'react-dom';
+
+import * as styles from './styles';
 
 import App from './components/app.jsx';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('mountNode')
+ReactDom.render(
+  <App />, document.getElementById('mountNode')
 );
+
