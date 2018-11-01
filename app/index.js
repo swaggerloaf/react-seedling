@@ -5,7 +5,4 @@ import * as styles from './styles';
 
 import App from './components/App.jsx';
 
-ReactDom.render(
-  <App />, document.getElementById('mountNode')
-);
-
+ReactDom.render(<App />, document.getElementById('mountNode'));

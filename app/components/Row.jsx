@@ -4,9 +4,9 @@ class Row extends Component {
 
   render() {
     return (
-      <tr>
-        <td>{this.props.name}</td>
-      </tr>
+      <a href="#" className="btn">
+              Name <span className="badge badge-success">{this.props.name}</span>
+      </a>
     );
   }
 }
