@@ -22,7 +22,7 @@
     "react-transition-group":"^2.5.0",
     "react-helmet": "^5.2.0",
     "react-redux": "^5.1.0",
-    "react-router-dom": "^4.3.1",
+    "react-router-dom": "^4.4.0-beta",
     "react-window":"^1.2.4",
     "memoize-one":"4.0.3",
     "redux": "^4.0.1",
