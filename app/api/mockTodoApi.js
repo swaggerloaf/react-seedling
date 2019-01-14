@@ -6,7 +6,7 @@ import delay from './delay';
 const todos = [
   {
     id: 1,
-    text: 'Building Applications in React and Flux',
+    text: 'Need to run like a duck in summer',
     watchHref:
       'http://www.pluralsight.com/courses/react-flux-building-applications',
     authorId: 'cory-house',
@@ -15,7 +15,7 @@ const todos = [
   },
   {
     id: 2,
-    text: 'Clean Code: Writing Code for Humans',
+    text: 'Clean the pig farm',
     watchHref: 'http://www.pluralsight.com/courses/writing-clean-code-humans',
     authorId: 'cory-house',
     completed: false,
@@ -23,7 +23,7 @@ const todos = [
   },
   {
     id: 3,
-    text: 'Architecting Applications for the Real World',
+    text: 'Think like a react programmer',
     watchHref:
       'http://www.pluralsight.com/courses/architecting-applications-dotnet',
     authorId: 'cory-house',
@@ -32,7 +32,7 @@ const todos = [
   },
   {
     id: 4,
-    text: 'Becoming an Outlier: Reprogramming the Developer Mind',
+    text: 'Do it like you mean it',
     watchHref:
       'http://www.pluralsight.com/courses/career-reboot-for-developer-mind',
     authorId: 'cory-house',
@@ -41,7 +41,7 @@ const todos = [
   },
   {
     id: 5,
-    text: 'Web Component Fundamentals',
+    text: 'Lean something today',
     watchHref: 'http://www.pluralsight.com/courses/web-components-shadow-dom',
     authorId: 'cory-house',
     completed: false,
