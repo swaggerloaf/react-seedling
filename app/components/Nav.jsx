@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Spinner from 'react-svg-spinner';
+//import Spinner from 'react-svg-spinner';
 
 export default class Nav extends Component {
   render() {
@@ -17,9 +17,9 @@ export default class Nav extends Component {
             <li>
               <Link to="/about">About</Link>
             </li>
-            <li>
+            {/* <li>
               <Spinner size="32px" color="fuchsia" />
-            </li>
+            </li> */}
           </ul>
         </nav>
       </>
