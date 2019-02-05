@@ -2,11 +2,20 @@
   "name": "react-seedling",
   "version": "1.0.0",
   "author": "@swaggerloaf",
+  "jest": {
+    "automock": false,
+    "setupFiles": [
+      "./setupJest.js"
+    ]
+  },
   "description": "Starter react project using babel, webpack, bootstrap and VS Code",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server",
     "build": "node_modules/.bin/webpack --progress",
-    "test": "jest"
+    "test": "jest",
+    "generate-mock-data": "node buildScripts/generateMockData",
+    "prestart-mockapi": "npm run generate-mock-data",
+    "start-mockapi": "json-server --watch db.json --port 3001"
   },
   "license": "MIT",
   "repository": "https://github.com/swaggerloaf/react-seedling",
@@ -55,7 +64,9 @@
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.14",
     "node-sass": "4.11.0",
-    "sass-loader": "7.1.0"
+    "sass-loader": "7.1.0",
+    "json-schema-faker": "0.5.0-rc16",
+    "json-server": "0.14.2"
   },
   "engines": {
     "node": ">=8"
