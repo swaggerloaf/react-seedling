@@ -1,5 +1,9 @@
-@import 'node_modules/bootstrap/scss/root';
+@import 'node_modules/bootstrap/scss/tables';
 
+$theme-colors: (
+  'primary': #0074d9,
+  'danger': #ff4136
+);
 .nav_component {
   color: blue;
 }
