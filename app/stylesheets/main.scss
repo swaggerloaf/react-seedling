@@ -1,50 +1,15 @@
-@import 'base/_reset.scss';
-@import 'components/_all.scss';
+@import './node_modules/bootstrap/scss/bootstrap';
 
-.body {
-  margin: 15px;
-}
-
-h1,
-h2,
-h3 {
-  color: #f0582a;
-}
-
-button {
-  margin: 5px;
-}
-
-ul.unstyled {
+ul {
+  background-color: theme-color(info);
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-image: linear-gradient(to bottom right, #f0582a, #eb0685);
-}
-
-nav li {
-  float: left;
-}
-
-nav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-nav li a:hover {
-  background-color: #d9390d;
-}
-
-nav button {
-  margin-top: 13px;
+ul li {
+  background-color: theme-color(warning);
+  padding: 20px;
+  margin: 25px;
+  border-color: black;
+  border-style: dashed;
+  border-width: 2px;
 }
