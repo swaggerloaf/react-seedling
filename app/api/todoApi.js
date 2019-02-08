@@ -13,12 +13,6 @@ export function deleteTodo(id) {
 function get(url) {
   return fetch(baseUrl + url).then(onSuccess, onError);
 }
-
-export function get(url) {
-  return fetch(baseUrl + url).then(onSuccess, onError);
-}
-
-export function del(url) {
   const request = new Request(baseUrl + url, {
     method: 'DELETE'
   });
