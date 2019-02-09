@@ -13,7 +13,7 @@
     "start": "npm-run-all --parallel start2  start-mockapi",
     "start2": "node_modules/.bin/webpack-dev-server",
     "build": "node_modules/.bin/webpack --progress",
-    "test": "jest",
+    "test": "jasmine",
     "generate-mock-data": "node buildScripts/generateMockData",
     "prestart-mockapi": "npm run generate-mock-data",
     "start-mockapi": "json-server --watch db.json --port 3001"
@@ -27,9 +27,8 @@
     "react-dom": "^16.8.1",
     "react-svg-spinner": "1.0.2",
     "redux": "^4.0.1",
-    "redux-saga": "~1.0.1",
+    "redux-thunk": "2.3.0",
     "redux-logger": "3.0.6",
-    "cross-fetch": "3.0.1",
     "shortid": "^2.2.14",
     "reselect": "4.0.0",
     "immutable": "4.0.0-rc.12",
@@ -69,7 +68,8 @@
     "node-sass": "4.11.0",
     "sass-loader": "7.1.0",
     "json-schema-faker": "0.5.0-rc16",
-    "json-server": "0.14.2"
+    "json-server": "0.14.2",
+    "jasmine": "3.3.1"
   },
   "engines": {
     "node": ">=8"
@@ -78,6 +78,7 @@
     "react",
     "redux",
     "babel",
-    "webpack"
+    "webpack",
+    "jasmine"
   ]
 }
