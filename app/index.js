@@ -8,10 +8,12 @@ import App from './components/App.jsx';
 import store from './redux/configureStore.js';
 
 render(
+  <React.StrictMode>
   <Provider store={store}>
     <Router>
       <Route component={App} />
     </Router>
-  </Provider>,
+  </Provider>
+  </React.StrictMode>,
   document.getElementById('mountNode')
 );
