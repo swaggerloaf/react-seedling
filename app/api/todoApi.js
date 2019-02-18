@@ -11,14 +11,14 @@ export function deleteTodo(id) {
 }
 
 function get(url) {
-  return fetch(baseUrl + url).then(onSuccess, onError);
+  return fetch(baseUrl + url); //.then(onSuccess, onError);
 }
 
 function del(url) {
   const request = new Request(baseUrl + url, {
     method: 'DELETE'
   });
-  return fetch(request).then(onSuccess, onError);
+  return fetch(request); //then(onSuccess, onError);
 }
 
 function onSuccess(response) {
