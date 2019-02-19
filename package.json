@@ -7,7 +7,8 @@
     "start": "npm-run-all --parallel start2  start-mockapi",
     "start2": "node_modules/.bin/webpack-dev-server",
     "build": "node_modules/.bin/webpack --progress",
-    "test": "jasmine",
+    "test:ci": "jest",
+    "test": "jest --watchAll",
     "generate-mock-data": "node buildScripts/generateMockData",
     "prestart-mockapi": "npm run generate-mock-data",
     "start-mockapi": "json-server --watch db.json --port 3001"
@@ -28,7 +29,7 @@
     "immutable": "4.0.0-rc.12",
     "react-transition-group": "^2.5.3",
     "react-redux": "^6.0.0",
-    "react-router-dom": "^4.4.0-beta",
+    "react-router-dom": "next",
     "react-window": "^1.5.1",
     "memoize-one": "5.0.0",
     "auth0-js": "9.10.0",
@@ -37,9 +38,10 @@
     "express-jwt": "5.3.1",
     "express-jwt-authz": "1.0.0",
     "jwks-rsa": "1.4.0",
-    "bootstrap": "4.2.1",
+    "bootstrap": "4.3.1",
     "font-awesome": "4.7.0",
-    "classnames": "2.2.6"
+    "classnames": "2.2.6",
+    "react-toastify": "4.5.2"
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
@@ -67,7 +69,8 @@
     "enzyme": "3.9.0",
     "enzyme-adapter-react-16": "1.9.1",
     "jest": "24.1.0",
-    "react-test-renderer": "16.8.2"
+    "react-test-renderer": "16.8.2",
+    "react-testing-library": "5.9.0"
   },
   "engines": {
     "node": ">=8"
@@ -76,6 +79,16 @@
     "react",
     "redux",
     "babel",
-    "webpack"
-  ]
+    "webpack",
+    "jest"
+  ],
+  "jest": {
+    "setupFiles": [
+      "./tools/testSetup.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tools/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/tools/styleMock.js"
+    }
+  }
 }
